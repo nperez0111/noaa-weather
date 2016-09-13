@@ -1,6 +1,6 @@
 # noaa-weather [![Build Status](https://travis-ci.org/nperez0111/noaa-weather.svg?branch=master)](https://travis-ci.org/nperez0111/noaa-weather)
 
-> My wicked module
+> A Small Web app for displaying the text Marine Forecast straight from NOAA.
 
 
 ## Install
