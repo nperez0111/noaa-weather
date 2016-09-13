@@ -15,29 +15,32 @@ $ npm install --save noaa-weather
 ```js
 const noaaWeather = require('noaa-weather');
 
-noaaWeather('unicorns');
-//=> 'unicorns & rainbows'
+noaaWeather('Miami, Fl');
+//=> returns json of current conditions in Miami Florida
 ```
 
 
 ## API
 
-### noaaWeather(input, [options])
+### noaaWeather(location[latitude], [longitude])
 
-#### input
+#### location
 
 Type: `string`
 
-Lorem ipsum.
+If location is a string and a valid location,will return a json promise of the current conditions in that location
 
-#### options
+#### latitude
 
-##### foo
+Type: `Number`
 
-Type: `boolean`<br>
-Default: `false`
+If the location is not a string but rather a number, will search using latitude and longitude specified
 
-Lorem ipsum.
+### longitude
+
+Type:`Number`
+
+Same as above. 
 
 
 ## License
