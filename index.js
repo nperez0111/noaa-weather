@@ -6,7 +6,17 @@ module.exports = ( city, long ) => {
 
     if ( long === Number( long ) && city === Number( city ) ) {
 
-        return fetch( str + `lat=${city}&lon=${long}` )
+        return fetch( str + `lat=${city}&lon=${long}` ).then( response => {
+
+          if ( response.status >= 400 ) {
+
+            throw new Error( 'Bad response from server' )
+
+          }
+
+          return response.json()
+          
+        })
 
     } else if ( city !== Number( city ) ) {
 
