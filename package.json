@@ -1,6 +1,6 @@
 {
   "name": "noaa-weather",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "My wicked module",
   "license": "MIT",
   "repository": "nperez0111/noaa-weather",
